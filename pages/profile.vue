@@ -36,7 +36,7 @@
           <h4>История ваших действий</h4>
         </div>
         <div style="height: 70vh; overflow-x: auto" >
-          <b-card style="margin: 10px;"  title="Card Title" v-for="i in 12">
+          <b-card style="margin: 10px;"  title="Card Title" v-for="i in 12" :key="i">
             <b-card-text>
               With supporting text below as a natural lead-in to additional content.
             </b-card-text>

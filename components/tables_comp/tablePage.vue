@@ -10,6 +10,11 @@
             <span v-else>No</span>
           </template>
         </b-editable-table>
+<!--          <vue-excel-editor v-model="jsondata1">-->
+<!--        <vue-excel-column field="user"   label="User ID"       type="string" width="80px" />-->
+<!--        <vue-excel-column field="name"   label="Name"          type="string" width="150px" />-->
+<!--        <vue-excel-column field="phone"  label="Contact"       type="string" width="130px" />-->
+<!--    </vue-excel-editor>-->
       </b-tab>
       <b-tab no-body title="Цены">
          <b-editable-table style="width: 95vw;" bordered class="editable-table" v-model="price_data" :fields="price_fields" @input-change="handleInput">
@@ -37,12 +42,18 @@ export default {
    mounted() {
         console.log(this.$route.params.id_calc);
         if(this.$route.params.id_calc===undefined){
-          this.items = [];
+          this.calculation_data = [];
         }
    },
   data(){
     return{
-
+      jsondata1:[
+        {user: 'test', name: 'username', field:'+785425862'},
+        {user: 'test', name: 'username', field:'+785425862'},
+        {user: 'test', name: 'username', field:'+785425862'},
+        {user: 'test', name: 'username', field:'+785425862'},
+        {user: 'test', name: 'username', field:'+785425862'},
+      ]
     }
   },
   computed:{

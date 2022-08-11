@@ -13,7 +13,7 @@
         <hr>
       </div>
         <div >
-          <b-card style="margin: 10px;"  title="Card Title" v-for="i in 10">
+          <b-card style="margin: 10px;"  title="Card Title" v-for="i in 10" :key="i">
             <b-card-text>
               With supporting text below as a natural lead-in to additional content.
             </b-card-text>
