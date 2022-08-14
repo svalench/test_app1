@@ -34,7 +34,7 @@ export const state = () => ({
     {id:1, name: 'test1', price:123},
   ],
   calculation_data: [
-    {id:1, name2: 'test', name3: null, name4:undefined, name5: 324234, type:1},
+    {name2: 'test', id:1, name3: null, name4:undefined, name5: 324234, type:1},
     {id:2, name2: 'test', name3: null, name4:undefined, name5: 324234, type:1},
     {id:3, name2: 'test', name3: null, name4:undefined, name5: 324234, type:1},
     {id:4, name2: 'test', name3: null, name4:undefined, name5: 324234, type:1},
