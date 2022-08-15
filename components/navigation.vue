@@ -1,6 +1,6 @@
 <template>
 <div>
-  <b-navbar toggleable="lg" type="dark" style="background-color: #172db8;">
+  <b-navbar toggleable="lg" type="dark" variant="primary">
     <b-navbar-brand href="#">AppCalcAPS</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

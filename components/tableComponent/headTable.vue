@@ -5,7 +5,7 @@
           v-for="(field, k) in fields_"
           :key="k"
           v-if="visibility(field, row, k)">
-        {{field?.label?field?.label:field?.key}}
+        {{field.label?field.label:field.key}}
       </th>
       <th v-else></th>
     </tr>

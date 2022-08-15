@@ -5,7 +5,7 @@
       <div style="position: sticky;top: 0; z-index: 100; background-color: rgba(206,206,204,0.27); backdrop-filter: blur(2px);">
         <hr>
         <div style="display: flex">
-        <h4 style="color: #8f9aa3">
+        <h4 style="color: gray">
           Доступные мне расчеты
         </h4>
         <b-input placeholder="поиск" style="width: 30%; margin: 0px 10px 0px 40px"></b-input> <b-btn>искать</b-btn>
@@ -24,10 +24,10 @@
 
 
       <b-col>
-        <div style="position: sticky;top: 0; z-index: 100; background-color: rgba(206,206,204,0.27); backdrop-filter: blur(2px);">
+        <div style="position: sticky;top: 0; z-index: 100; background-color: rgba(162,159,162,0.5); backdrop-filter: blur(2px);">
         <hr>
           <div style="display: flex">
-        <h4 style="color: #8f9aa3">
+        <h4 style="color: dark">
           Фильтры
         </h4>
           <b-btn style="margin-left: 20px;" v-show="!(JSON.stringify(activeFilter) === JSON.stringify(defaultFilter))" @click="resetFilter" variant="outline-danger">сброс</b-btn>
