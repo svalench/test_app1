@@ -94,48 +94,10 @@ export default {
 </script>
 
 <style>
-table.editable-table {
-  margin: auto;
-}
 
-table.editable-table td {
-  vertical-align: middle;
-}
-
-.editable-table .data-cell {
-  padding: 8px;
-  vertical-align: middle;
-}
-
-.editable-table .custom-checkbox {
-  width: 50px;
-}
-
-.name-col {
-  width: 120px;
-}
-
-.department-col {
-  width: 150px;
-}
-
-.age-col {
-  width: 100px;
-}
-
-.date-col {
-  width: 200px;
-}
-.is-active-col {
-  width: 100px
-}
-table.b-table {
-    width: 100vw;
-}
 thead{
   position: sticky;
-  top: 3.3rem;
-  background-color: rgba(23, 45, 184, 0.54);
+  top: 2.3rem;
   color: #5e5d5c;
    backdrop-filter: blur(2px);
 }

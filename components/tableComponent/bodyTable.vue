@@ -1,6 +1,9 @@
 <template>
 <b-container fluid="">
-  <table ref="table">
+  <b-card no-body>
+   <b-tabs id="tabs" card class="table-body-card">
+       <b-tab no-body title="Основной расчет">
+  <table ref="table" class="custom_table_class">
     <head-table  :fields="calculation_field"></head-table>
     <tbody>
     <tr  v-for="(item, k) in calculation_data" :key="k">
@@ -15,6 +18,13 @@
     </tr>
     </tbody>
   </table>
+          </b-tab>
+      <b-tab no-body title="Цены">
+        </b-tab>
+      <b-tab no-body title="Каталог ТГ">
+        </b-tab>
+    </b-tabs>
+  </b-card>
 </b-container>
 </template>
 
@@ -150,14 +160,14 @@ export default {
 }
 </script>
 
-<style>
-table, th, td {
+<style >
+.custom_table_class, .custom_table_class th, .custom_table_class td {
   border: 1px solid;
   width: 80px;
   height: 30px;
 
 }
-table {
+.custom_table_class {
   width: 100%;
 }
 .b-cell{
@@ -167,5 +177,8 @@ table {
   border-radius: 4px;
    transition: all .2s linear;
 }
-
+.table-body-card{
+  height: 80vh;
+  overflow: auto;
+}
 </style>

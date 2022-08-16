@@ -3,7 +3,7 @@
   <b-container fluid="" style="margin: 15px;">
     <table-actions></table-actions>
   </b-container>
-     <table-page></table-page>
+    <body-table></body-table>
   </div>
 </template>
 
@@ -11,11 +11,13 @@
 import BEditableTable from 'bootstrap-vue-editable-table';
 import TableActions from "../../components/tables_comp/tableActions";
 import TablePage from "../../components/tables_comp/tablePage";
+import BodyTable from "../../components/tableComponent/bodyTable";
 export default {
   components: {
     TablePage,
     TableActions,
-    BEditableTable
+    BEditableTable,
+    BodyTable
   },
   name: "index",
   data() {
